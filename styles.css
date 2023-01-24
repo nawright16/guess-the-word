@@ -1,7 +1,14 @@
 body {
-
+background-color: #040C47;
 }
 
 .container {
-    
+    width: 100%;
+}
+
+.title {
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #E5BC17;
+    border-bottom: dotted 1px #9E1D05;
 }
