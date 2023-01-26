@@ -7,6 +7,8 @@ body {
     height: 90vh;
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
     }
 
 .title {
@@ -14,4 +16,28 @@ body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: #E5BC17;
     border-bottom: dotted 1px #9E1D05;
+}
+
+.guess-board {
+    width: 400px;
+}
+
+.tile-rows {
+    width: 380px;
+   
+}
+
+.messages {
+    width: 350px;
+}
+
+.keyboard {
+    width: 500px;
+ 
+}
+
+.keyboard button {
+    width: 45px;
+    height: 45px;
+    background-color: #4287f5;
 }

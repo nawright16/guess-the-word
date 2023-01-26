@@ -10,14 +10,15 @@
 
 // be sure to add flexbox to css
 
-//need array of keyboard values
+
 
 //create keys using forEach
+const tileDisplay = document.querySelector('.tile-rows')
 
-
-const tile = document.querySelector('.tile')
+//const tile = document.querySelector('.tile')
 const keyboard = document.querySelector('.keyboard')
 
+//need array of keyboard values
 const keys = [
     'Q',
     'W',
@@ -47,9 +48,26 @@ const keys = [
     'ENTER',
     '<<'
 ]
+//create the word rows with tiles
+const guessRows = [
+    ['', '', '', '', ''],
+    ['', '', '', '', ''],
+    ['', '', '', '', ''],
+    ['', '', '', '', ''],
+    ['', '', '', '', ''],
+    ['', '', '', '', '']
+]
+
+ //need to click the keys
+ const handleClick = () => {
+    console.log('clicked')
+ }
 
 keys.forEach(key => {
     const button = document.createElement('button')
     button.textContent = key
+    button.setAttribute('id', key)
+    button.addEventListener('click', handleClick)
     keyboard.append(button)
+
 })
