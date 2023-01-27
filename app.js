@@ -60,6 +60,7 @@ tileRows.forEach((tileRow, tileRowIndex) => {
     tileRow.forEach((guess, guessIndex) => {
        const letter = document.createElement('div')
        letter.setAttribute('id', 'tileRow-' + tileRowIndex + '-guess-' + guessIndex)
+       letter.classList.add('guess')
        tile.append(letter)
     })
     tileDisplay.append(tile)

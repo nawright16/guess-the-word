@@ -19,28 +19,40 @@ body {
 }
 
 .guess-board {
-    height: 400px; 
-    width: 460px;
-    background-color: #9E1D05;
-}
-
-.tile-container {
-    width: 380px;
+    height: 500px; 
+    width: 500px;
+    background-color: #040c65;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
    
+    
 }
 
-.tile-container #div {
-    width: 65px;
-    height: 65px;
-    background-color: aliceblue;
+.tile-container div {
+    display: flex;
 }
+
+.tile-container .guess {
+    display: flex;
+    width: 63px;
+    height: 63px;
+    background-color: #040c60;
+    border: 2px solid #3a3a3d;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 2px;
+}
+
 .messages {
-    width: 350px;
+    width: 500px;
+    height: 20px;
 }
 
 .keyboard {
     width: 500px;
- 
 }
 
 .keyboard button {
