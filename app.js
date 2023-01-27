@@ -1,6 +1,5 @@
 // create word bank array
-
-//create grid for words
+const wordle = 'SUPER'
 
 //be able to type 1 letter into each cell
 
@@ -53,6 +52,11 @@ const tileRows = [
     ['', '', '', '', '']
 ]
 
+//starting position
+let currentRow = 0;
+let currentTile = 0;
+
+
 // add guessrows to screen
 tileRows.forEach((tileRow, tileRowIndex) => {
     const tile = document.createElement('div')
@@ -65,16 +69,24 @@ tileRows.forEach((tileRow, tileRowIndex) => {
     })
     tileDisplay.append(tile)
 })
- //need to click the keys
- const handleClick = () => {
-    console.log('clicked')
- }
+
 
 keys.forEach(key => {
     const button = document.createElement('button')
     button.textContent = key
     button.setAttribute('id', key)
-    button.addEventListener('click', handleClick)
+    button.addEventListener('click', () => handleClick(key))
     keyboard.append(button)
 
 })
+
+ //need to click the keys
+ const handleClick = (key) => {
+    console.log('clicked', key)
+    addLetter(key)
+ }
+
+const addLetter = (part) => {
+    const square = document.getElementById('tileRow-' + currentRow + '-guess-' + currentTile)
+    square.textContent = part;
+ }
