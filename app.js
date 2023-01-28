@@ -155,6 +155,7 @@ const addLetter = (part) => {
         const dataLetter = tile.getAttribute('data')
 
         setTimeout(() => {
+
         if (dataLetter === wordle[index]) {
             tile.classList.add('green-fillcolor')
         } else if (wordle.includes(dataLetter)) {
