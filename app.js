@@ -5,12 +5,10 @@ const wordle = 'SUPER'
 
 // check cell values against array index values
 
-
-//create keys 
+// assign values for each major div
 const tileDisplay = document.querySelector('.tile-container')
-
-//const tile = document.querySelector('.tile')
 const keyboard = document.querySelector('.keyboard')
+const messageDisplay = document.querySelector('.messages') 
 
 //need array of keyboard values
 const keys = [
@@ -88,11 +86,13 @@ keys.forEach(key => {
         deleteLetter()
         return
     }
-    if (key === 'enter') {
-        console.log('check for match')
+    if (key === 'ENTER') {
+        checkRows()
+        console.log('tileRows',tileRows)
         return
     }
     addLetter(key)
+    console.log('tileRows', tileRows)
  }
 
 const addLetter = (part) => {
@@ -114,4 +114,21 @@ const addLetter = (part) => {
     tileRows[currentRow][currentTile] = '';
     square.setAttribute('data', '');
     }
+ }
+
+ const checkRows = () => {
+    const word = tileRows[currentRow].join('')
+
+    if (currentTile === 5) {
+        console.log('guess is ' + word, 'wordle is '+ wordle)
+        if (wordle === word) {
+            showMessage('Great Job!')
+        }
+    }
+ }
+
+ const showMessage = (message) => {
+    const gameMessage = document.createElement('p')
+    gameMessage.textContent = message
+    messageDisplay.append(message)
  }

@@ -4,7 +4,7 @@ body {
 }
 
 .container {
-    height: 90vh;
+    height: 95vh;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -19,8 +19,8 @@ body {
 }
 
 .guess-board {
-    height: 500px; 
-    width: 500px;
+    height: 52vh; 
+    width: 400px;
     background-color: #040c65;
     display: flex;
     justify-content: center;
@@ -35,8 +35,8 @@ body {
 
 .tile-container .guess {
     display: flex;
-    width: 63px;
-    height: 63px;
+    width: 60px;
+    height: 7.5vh;
     background-color: #040c60;
     border: 2px solid #3a3a3d;
     color: white;
@@ -48,8 +48,11 @@ body {
 }
 
 .messages {
-    width: 500px;
-    height: 30px;
+    width: 200px;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    color: white;
 }
 
 .keyboard {
@@ -61,4 +64,12 @@ body {
     height: 45px;
     background-color: #4287f5;
     border-radius: 4px;
+}
+
+.messages p {
+    background-color: #4287f5;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 0;
+    
 }
