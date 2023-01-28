@@ -53,6 +53,7 @@ const tileRows = [
 //starting position
 let currentRow = 0;
 let currentTile = 0;
+let isGameOver = false;
 
 
 // add guessrows to screen
@@ -123,6 +124,18 @@ const addLetter = (part) => {
         console.log('guess is ' + word, 'wordle is '+ wordle)
         if (wordle === word) {
             showMessage('Great Job!')
+            isGameOver = true
+            return
+        } else {
+            if (currentRow >= 5) {
+                isGameOver = true
+                showMessage('Game Over')
+                return
+            }
+            if (currentRow < 5) {
+                currentRow++
+                currentTile = 0
+            }
         }
     }
  }
@@ -131,4 +144,5 @@ const addLetter = (part) => {
     const gameMessage = document.createElement('p')
     gameMessage.textContent = message
     messageDisplay.append(message)
+    setTimeout(() => messageDisplay.remove(message), 5000)
  }

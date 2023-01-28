@@ -49,7 +49,7 @@ body {
 
 .messages {
     width: 200px;
-    height: 70px;
+    height: 35px;
     display: flex;
     justify-content: center;
     color: white;
