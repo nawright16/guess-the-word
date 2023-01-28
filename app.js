@@ -89,4 +89,7 @@ keys.forEach(key => {
 const addLetter = (part) => {
     const square = document.getElementById('tileRow-' + currentRow + '-guess-' + currentTile)
     square.textContent = part;
+    tileRows[currentRow][currentTile] = part;
+    currentTile++;
+    console.log('tileRows', tileRows)
  }

@@ -39,6 +39,7 @@ body {
     height: 63px;
     background-color: #040c60;
     border: 2px solid #3a3a3d;
+    color: white;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
