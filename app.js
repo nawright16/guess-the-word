@@ -1,10 +1,15 @@
 // create word bank array
-const wordle = 'SUPER'
+const wordBank = ['HAVEN', 'DRAIN', 'SINUS', 'PENNY', 'PASTE', 'BOUGH', 'FOLLY', 'EXERT', 'PARSE', 'ARRAY','RURAL', 'FOUND', 'CRASH', 'REFER', 'TRICK', 'MAFIA', 'STERN', 'SMURF', 'COVER', 'CHIEF', 'BUNCH', 'PILOT', 'QUEST', 'STAMP', 'ROUSE', 'PIZZA', 'JEWEL', 'AGONY']
 
-//be able to type 1 letter into each cell
+
+const wordle = wordBank[Math.floor(Math.random() * wordBank.length)]
 
 // check cell values against array index values
+const showWordle = () => {
+    console.log(wordle)
+}
 
+showWordle()
 // assign values for each major div
 const tileDisplay = document.querySelector('.tile-container')
 const keyboard = document.querySelector('.keyboard')
@@ -53,7 +58,7 @@ const tileRows = [
 //starting position
 let currentRow = 0;
 let currentTile = 0;
-let isGameOver = false;
+let gameOver = false;
 
 
 // add guessrows to screen
@@ -125,11 +130,11 @@ const addLetter = (part) => {
         addColor()
         if (wordle === word) {
             showMessage('Great Job!')
-            isGameOver = true
+            gameOver = true
             return
         } else {
             if (currentRow >= 5) {
-                isGameOver = true
+                gameOver = true
                 showMessage('Game Over')
                 return
             }
@@ -150,12 +155,11 @@ const addLetter = (part) => {
 
  
  const addColor = () => {
-    const rowTiles = document.querySelector('#tileRow-' + currentRow).childNodes 
+    const rowTiles = document.querySelector('#tileRow-' + currentRow).childNodes   
     rowTiles.forEach((tile, index) => {
         const dataLetter = tile.getAttribute('data')
 
-        setTimeout(() => {
-
+        setTimeout(() => {      
         if (dataLetter === wordle[index]) {
             tile.classList.add('green-fillcolor')
         } else if (wordle.includes(dataLetter)) {
