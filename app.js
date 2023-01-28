@@ -6,7 +6,7 @@ const wordle = 'SUPER'
 // check cell values against array index values
 
 
-//create keys using forEach
+//create keys 
 const tileDisplay = document.querySelector('.tile-container')
 
 //const tile = document.querySelector('.tile')
