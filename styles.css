@@ -73,3 +73,18 @@ body {
     margin: 0;
     
 }
+
+.red-fillcolor {
+    background-color: #FF6D6A !important;
+    border: none !important
+}
+
+.yellow-fillcolor {
+    background-color: #b59f3a !important;
+    border: none !important;
+}
+
+.green-fillcolor {
+    background-color: #30B700 !important;
+    border: none !important;
+}

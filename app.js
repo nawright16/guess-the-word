@@ -120,8 +120,9 @@ const addLetter = (part) => {
  const checkRows = () => {
     const word = tileRows[currentRow].join('')
 
-    if (currentTile === 5) {
+    if (currentTile > 4) {
         console.log('guess is ' + word, 'wordle is '+ wordle)
+        addColor()
         if (wordle === word) {
             showMessage('Great Job!')
             isGameOver = true
@@ -145,4 +146,22 @@ const addLetter = (part) => {
     gameMessage.textContent = message
     messageDisplay.append(message)
     setTimeout(() => messageDisplay.remove(message), 5000)
+ }
+
+ 
+ const addColor = () => {
+    const rowTiles = document.querySelector('#tileRow-' + currentRow).childNodes 
+    rowTiles.forEach((tile, index) => {
+        const dataLetter = tile.getAttribute('data')
+
+        setTimeout(() => {
+        if (dataLetter === wordle[index]) {
+            tile.classList.add('green-fillcolor')
+        } else if (wordle.includes(dataLetter)) {
+            tile.classList.add('yellow-fillcolor')
+        } else {
+            tile.classList.add('red-fillcolor')
+        }
+    }, 300 * index)
+    })
  }
