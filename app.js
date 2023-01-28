@@ -83,13 +83,35 @@ keys.forEach(key => {
  //need to click the keys
  const handleClick = (key) => {
     console.log('clicked', key)
+    if (key === '<<') {
+        console.log('delete letter')
+        deleteLetter()
+        return
+    }
+    if (key === 'enter') {
+        console.log('check for match')
+        return
+    }
     addLetter(key)
  }
 
 const addLetter = (part) => {
+    if (currentTile < 5 && currentRow < 6) {
     const square = document.getElementById('tileRow-' + currentRow + '-guess-' + currentTile)
     square.textContent = part;
     tileRows[currentRow][currentTile] = part;
+    square.setAttribute('data', part);
     currentTile++;
     console.log('tileRows', tileRows)
+    }
+ }
+
+ const deleteLetter = () => {
+    if (currentTile > 0 ) {
+    currentTile--
+    const square = document.getElementById('tileRow-' + currentRow + '-guess-' + currentTile)
+    square.textContent = ''
+    tileRows[currentRow][currentTile] = '';
+    square.setAttribute('data', '');
+    }
  }
