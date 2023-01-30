@@ -7,7 +7,7 @@ body {
     height: 95vh;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    /* justify-content: space-between; */
     align-items: center;
     }
 
@@ -21,7 +21,7 @@ body {
 .guess-board {
     height: 52vh; 
     width: 400px;
-    background-color: #040c65;
+    /* background-color: #040c65; */
     display: flex;
     justify-content: center;
     flex-direction: row;
@@ -35,8 +35,8 @@ body {
 
 .tile-container .guess {
     display: flex;
-    width: 60px;
-    height: 7.5vh;
+    width: 85px;
+    height: 85px;
     background-color: #040c60;
     border: 2px solid #3a3a3d;
     color: white;
@@ -49,21 +49,25 @@ body {
 
 .messages {
     width: 200px;
-    height: 35px;
+    height:  5em;
     display: flex;
     justify-content: center;
     color: white;
 }
 
 .keyboard {
-    width: 500px;
+    width: 650px;
+    
+  
 }
 
 .keyboard button {
-    width: 45px;
-    height: 45px;
+    width: 65px;
+    height: 64px;
+   
+    
     background-color: #4287f5;
-    border-radius: 4px;
+    border-radius: 5px;
 }
 
 .messages p {
@@ -88,4 +92,8 @@ body {
 .green-fillcolor {
     background-color: #30B700 !important;
     border: none !important;
+}
+
+#X {
+    margin-left: 65px;
 }

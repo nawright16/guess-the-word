@@ -4,7 +4,6 @@ const wordBank = ['HAVEN', 'DRAIN', 'SINUS', 'PENNY', 'PASTE', 'BOUGH', 'FOLLY',
 
 const wordle = wordBank[Math.floor(Math.random() * wordBank.length)]
 
-// check cell values against array index values
 const showWordle = () => {
     console.log(wordle)
 }
@@ -42,6 +41,7 @@ const keys = [
     'V',
     'B',
     'N',
+    'M',
     'ENTER',
     '<<'
 ]
