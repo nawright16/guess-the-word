@@ -1,5 +1,5 @@
 body {
-    background-color: #040C47;
+    background-color: #1D3557;
     width: 100%;    
 }
 
@@ -7,21 +7,19 @@ body {
     height: 95vh;
     display: flex;
     flex-direction: column;
-    /* justify-content: space-between; */
     align-items: center;
     }
 
 .title {
     text-align: center;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    color: #E5BC17;
-    border-bottom: dotted 1px #9E1D05;
+    color: #457B9D;
+    border-bottom: dotted 1px #F1FAEE;
 }
 
 .guess-board {
     height: 52vh; 
     width: 400px;
-    /* background-color: #040c65; */
     display: flex;
     justify-content: center;
     flex-direction: row;
@@ -37,8 +35,8 @@ body {
     display: flex;
     width: 85px;
     height: 85px;
-    background-color: #040c60;
-    border: 2px solid #3a3a3d;
+    background-color: #457B9D;
+    border: 2px solid #F1FAEE;
     color: white;
     display: flex;
     flex-wrap: wrap;
@@ -64,14 +62,12 @@ body {
 .keyboard button {
     width: 65px;
     height: 64px;
-   
-    
-    background-color: #4287f5;
+    background-color: #A8DADC;
     border-radius: 5px;
 }
 
 .messages p {
-    background-color: #4287f5;
+    background-color: #A8DADC;
     border-radius: 10px;
     padding: 10px;
     margin: 0;
@@ -81,19 +77,24 @@ body {
 
 .red-fillcolor {
     background-color: #FF6D6A !important;
-    border: none !important
+    
 }
 
 .yellow-fillcolor {
     background-color: #b59f3a !important;
-    border: none !important;
+    
 }
 
 .green-fillcolor {
     background-color: #30B700 !important;
-    border: none !important;
+    
 }
 
 #X {
     margin-left: 65px;
 }
+
+
+
+
+
