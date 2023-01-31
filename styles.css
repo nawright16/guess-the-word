@@ -47,10 +47,13 @@ body {
 
 .messages {
     width: 200px;
-    height:  5em;
+    height: 100px;
+    font-size: large;
     display: flex;
     justify-content: center;
-    color: white;
+    color: #F1FAEE;
+    margin: 2px;
+    padding-top: 20px;
 }
 
 .keyboard {
