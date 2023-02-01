@@ -14,17 +14,28 @@ body {
     text-align: center;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: #457B9D;
-    border-bottom: dotted 1px #F1FAEE;
+    border-bottom: solid 4px #FF6D6A;
+    width: 100%;
 }
 
+.messages {
+    width: 200px;
+    height: 100px;
+    font-size: 32px;
+    display: flex;
+    justify-content: center;
+    color: #F1FAEE;
+    margin: 2px;
+    padding-top: 20px;
+}
+
+
 .guess-board {
-    height: 52vh; 
-    width: 400px;
+    height: 45vh; 
+    width: 430vw;
     display: flex;
     justify-content: center;
     flex-direction: row;
-   
-    
 }
 
 .tile-container div {
@@ -45,21 +56,9 @@ body {
     margin: 2px;
 }
 
-.messages {
-    width: 200px;
-    height: 100px;
-    font-size: large;
-    display: flex;
-    justify-content: center;
-    color: #F1FAEE;
-    margin: 2px;
-    padding-top: 20px;
-}
 
 .keyboard {
     width: 650px;
-    
-  
 }
 
 .keyboard button {
@@ -74,28 +73,91 @@ body {
     border-radius: 10px;
     padding: 10px;
     margin: 0;
-    
 }
 
-
 .red-fillcolor {
-    background-color: #FF6D6A !important;
-    
+    background-color: #FF6D6A !important;  
 }
 
 .yellow-fillcolor {
     background-color: #b59f3a !important;
-    
 }
 
 .green-fillcolor {
     background-color: #30B700 !important;
-    
 }
 
 #X {
     margin-left: 65px;
 }
+
+@media (max-width: 600px) {
+   
+    body {
+        display: flex;
+        justify-content: center;
+    }
+
+    .messages {
+        width: 200px;
+        height: 100px;
+        font-size: 32px;
+        display: flex;
+        justify-content: center;
+        color: #F1FAEE;
+        margin: 2px;
+        padding-top: 20px;
+    }
+
+    .guess-board {
+            height: 45vh; 
+            width: 30vw;
+            display: flex;
+            justify-content: center;
+            flex-direction: row;
+        }
+    
+    .tile-container {
+        height: 3.5em;
+        padding-bottom: 10px;
+    }
+    .tile-container div {
+        display: flex;
+    }
+    
+    .tile-container .guess {
+        display: flex;
+        width: 4vw;
+        height: 4vh;
+        background-color: #457B9D;
+        border: 2px solid #F1FAEE;
+        color: white;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        margin: 2px;
+    }
+
+    
+    
+    .keyboard {
+        width: 400px;
+        margin-left: 30px;
+    }
+    
+    .keyboard button {
+        width: 37px;
+        height: 37px;
+        background-color: #A8DADC;
+        border-radius: 5px;
+    }
+
+    #X {
+        margin-left: 37px;
+    }
+}
+
 
 
 
