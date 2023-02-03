@@ -1,105 +1,125 @@
+body {
+    background-color: #1D3557;
+    width: 100%;
+}
+
+.container {
+    height: 95vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.title {
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #457B9D;
+    border-bottom: solid 4px #FF6D6A;
+    width: 100vw;
+}
+
+.messages {
+    width: 40vw;
+    height: 6vh;
+    font-size: 1.25rem;
+    display: flex;
+    justify-content: center;
+    color: #F1FAEE;
+    margin: 2px;
+    padding-top: 22px;
+}
+
+.messages p {
+    background-color: #FF6D6A;
+    text-align: center;
+    font-weight: bold;
+    width:10em;
+    height: 1.5em;
+    border-radius: 5px;
+    padding-top: 4px;
+    margin: auto;
+}
+
+
+.guess-board {
+    height: 45vh;
+    width: 43vw;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.tile-container div {
+    display: flex;
+}
+
+.tile-container .guess {
+    display: flex;
+    width: 3vw;
+    height: 6vh;
+    background-color: #457B9D;
+    border: 2px solid #F1FAEE;
+    color: #F1FAEE;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 2px;
+}
+
+.keyboard {
+    width: 42rem;
+    margin-left: 1.5rem;
+}
+
+.keyboard button {
+    width: 4rem;
+    height: 4rem;
+    background-color: #A8DADC;
+    border-radius: 5px;
+}
+
+
+.red-fillcolor {
+    background-color: #FF6D6A !important;
+}
+
+.yellow-fillcolor {
+    background-color: #b59f3a !important;
+}
+
+.green-fillcolor {
+    background-color: #30B700 !important;
+}
+
+#X {
+    margin-left: 4rem;
+}
+
+.replay {
+    display: flex;
+    justify-content: center;
+}
+
+#replay-btn {
+    display: flex;
+    justify-content: center;
+    color: #F1FAEE;
+    font-weight: bold;
+    padding-top: .9em;
+    margin-top: 12em;
+    background-color: #FF6D6A;
+    width: 12em;
+    height: 3em;
+    border-radius: 5px;
+    border: none;
+}
+
+
+@media only screen and (max-width: 600px) {
+
 
     body {
-        background-color: #1D3557;
-        width: 100%;
-    }
-
-    .container {
-        height: 95vh;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .title {
-        text-align: center;
-        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        color: #457B9D;
-        border-bottom: solid 4px #FF6D6A;
-        width: 100vw;
-    }
-
-    .messages {
-        width: 40vw;
-        height: 6vh;
-        font-size: 1.3rem;
-        display: flex;
-        justify-content: center;
-        color: #F1FAEE;
-        margin: 2px;
-        padding-top: 20px;
-    }
-
-    .messages p {
-        background-color: #FF6D6A;
-    }
-
-    .guess-board {
-        height: 45vh;
-        width: 43vw;
-        display: flex;
-        justify-content: center;
-        flex-direction: row;
-    }
-
-    .tile-container div {
-        display: flex;
-    }
-
-    .tile-container .guess {
-        display: flex;
-        width: 3vw;
-        height: 6vh;
-        background-color: #457B9D;
-        border: 2px solid #F1FAEE;
-        color: white;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        align-items: center;
-        margin: 2px;
-    }
-
-    .keyboard {
-        width: 42rem;
-        margin-left: 1.5rem;
-    }
-
-    .keyboard button {
-        width: 4rem;
-        height: 4rem;
-        background-color: #A8DADC;
-        border-radius: 5px;
-    }
-
-    .messages p {
-        background-color: #FF6D6A;
-        border-radius: 10px;
-        padding: 10px;
-        margin: 0;
-    }
-
-    .red-fillcolor {
-        background-color: #FF6D6A !important;
-    }
-
-    .yellow-fillcolor {
-        background-color: #b59f3a !important;
-    }
-
-    .green-fillcolor {
-        background-color: #30B700 !important;
-    }
-
-    #X {
-        margin-left: 4rem;
-    }
-
-
- @media only screen and (max-width: 600px) {
-
-
-     body {
         display: flex;
         background-color: #1D3557;
         justify-content: center;
@@ -113,6 +133,7 @@
         border-bottom: solid 2px #FF6D6A;
         width: 100vw;
     }
+
     .messages {
         width: 20rem;
         height: 3rem;
@@ -170,4 +191,4 @@
     #X {
         margin-left: 37px;
     }
-} 
+}

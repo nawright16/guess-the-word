@@ -19,6 +19,7 @@ const tileDisplay = document.querySelector('.tile-container')
 const keyboard = document.querySelector('.keyboard')
 const messageDisplay = document.querySelector('.messages')
 
+
 // starting position using index values of the tileRows array above
 
 let currentRow = 0;
@@ -196,7 +197,7 @@ const checkRows = () => {
 const showMessage = (message) => {
     const gameMessage = document.createElement('p')
     gameMessage.textContent = message
-    messageDisplay.append(message)
+    messageDisplay.append(gameMessage)
 
 }
 
@@ -219,10 +220,14 @@ const addColor = () => {
     })
 }
 
-function isGameOver() {
-    if (gameOver === true) {
-        document.removeEventListener('keyup', checkRows)
-    }
+// From https://makeschool.org/mediabook/oa/tutorials/build-a-game-of-concentration-with-javascript/final-touch-ups/ and http://www.jacobenfield.com/jakeWeb/JS_GAMES/lesson18/index.php. This code assigns the replayButton variable to the replaybtn element in the HTML. Then calls the replay() function to reload the page.
+
+const replayButton = document.getElementById('replay-btn');
+replayButton.addEventListener('click', () => {
+    replay()
 }
+);
 
-
+function replay() {
+    location.reload();
+}
