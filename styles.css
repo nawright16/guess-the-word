@@ -1,107 +1,28 @@
-body {
-    background-color: #1D3557;
-    width: 100%;    
-}
 
-.container {
-    height: 95vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    body {
+        background-color: #1D3557;
+        width: 100%;
     }
 
-.title {
-    text-align: center;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    color: #457B9D;
-    border-bottom: solid 4px #FF6D6A;
-    width: 100%;
-}
-
-.messages {
-    width: 200px;
-    height: 100px;
-    font-size: 32px;
-    display: flex;
-    justify-content: center;
-    color: #F1FAEE;
-    margin: 2px;
-    padding-top: 20px;
-}
-
-
-.guess-board {
-    height: 45vh; 
-    width: 430vw;
-    display: flex;
-    justify-content: center;
-    flex-direction: row;
-}
-
-.tile-container div {
-    display: flex;
-}
-
-.tile-container .guess {
-    display: flex;
-    width: 85px;
-    height: 85px;
-    background-color: #457B9D;
-    border: 2px solid #F1FAEE;
-    color: white;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    margin: 2px;
-}
-
-
-.keyboard {
-    width: 650px;
-}
-
-.keyboard button {
-    width: 65px;
-    height: 64px;
-    background-color: #A8DADC;
-    border-radius: 5px;
-}
-
-.messages p {
-    background-color: #A8DADC;
-    border-radius: 10px;
-    padding: 10px;
-    margin: 0;
-}
-
-.red-fillcolor {
-    background-color: #FF6D6A !important;  
-}
-
-.yellow-fillcolor {
-    background-color: #b59f3a !important;
-}
-
-.green-fillcolor {
-    background-color: #30B700 !important;
-}
-
-#X {
-    margin-left: 65px;
-}
-
-@media (max-width: 600px) {
-   
-    body {
+    .container {
+        height: 95vh;
         display: flex;
-        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .title {
+        text-align: center;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        color: #457B9D;
+        border-bottom: solid 4px #FF6D6A;
+        width: 100vw;
     }
 
     .messages {
-        width: 200px;
-        height: 100px;
-        font-size: 32px;
+        width: 40vw;
+        height: 6vh;
+        font-size: 1.3rem;
         display: flex;
         justify-content: center;
         color: #F1FAEE;
@@ -109,26 +30,26 @@ body {
         padding-top: 20px;
     }
 
-    .guess-board {
-            height: 45vh; 
-            width: 30vw;
-            display: flex;
-            justify-content: center;
-            flex-direction: row;
-        }
-    
-    .tile-container {
-        height: 3.5em;
-        padding-bottom: 10px;
+    .messages p {
+        background-color: #FF6D6A;
     }
+
+    .guess-board {
+        height: 45vh;
+        width: 43vw;
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+    }
+
     .tile-container div {
         display: flex;
     }
-    
+
     .tile-container .guess {
         display: flex;
-        width: 4vw;
-        height: 4vh;
+        width: 3vw;
+        height: 6vh;
         background-color: #457B9D;
         border: 2px solid #F1FAEE;
         color: white;
@@ -139,16 +60,109 @@ body {
         margin: 2px;
     }
 
-    
-    
     .keyboard {
-        width: 400px;
-        margin-left: 30px;
+        width: 42rem;
+        margin-left: 1.5rem;
     }
-    
+
     .keyboard button {
-        width: 37px;
-        height: 37px;
+        width: 4rem;
+        height: 4rem;
+        background-color: #A8DADC;
+        border-radius: 5px;
+    }
+
+    .messages p {
+        background-color: #FF6D6A;
+        border-radius: 10px;
+        padding: 10px;
+        margin: 0;
+    }
+
+    .red-fillcolor {
+        background-color: #FF6D6A !important;
+    }
+
+    .yellow-fillcolor {
+        background-color: #b59f3a !important;
+    }
+
+    .green-fillcolor {
+        background-color: #30B700 !important;
+    }
+
+    #X {
+        margin-left: 4rem;
+    }
+
+
+ @media only screen and (max-width: 600px) {
+
+
+     body {
+        display: flex;
+        background-color: #1D3557;
+        justify-content: center;
+    }
+
+    .title {
+        font-size: .75rem;
+        text-align: center;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        color: #457B9D;
+        border-bottom: solid 2px #FF6D6A;
+        width: 100vw;
+    }
+    .messages {
+        width: 20rem;
+        height: 3rem;
+        font-size: 1.2rem;
+        display: flex;
+        justify-content: center;
+        color: #F1FAEE;
+        margin: 2px;
+        padding-top: 20px;
+    }
+
+    .guess-board {
+        height: 45vh;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .tile-container {
+        height: 3.5em;
+        padding-bottom: 10px;
+    }
+
+    .tile-container div {
+        display: flex;
+    }
+
+    .tile-container .guess {
+        display: flex;
+        width: 3vw;
+        height: 5vh;
+        background-color: #457B9D;
+        border: 2px solid #F1FAEE;
+        color: white;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        margin: 2px;
+    }
+
+    .keyboard {
+        width: 30vw;
+
+    }
+
+    .keyboard button {
+        width: 3vw;
+        height: 3vh;
         background-color: #A8DADC;
         border-radius: 5px;
     }
@@ -156,10 +170,4 @@ body {
     #X {
         margin-left: 37px;
     }
-}
-
-
-
-
-
-
+} 
