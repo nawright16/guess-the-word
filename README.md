@@ -7,7 +7,7 @@
 
 
 ## Description
-
+ This is a clone of the mega popular word guessing game. I took on this project to stretch myself and learn new JS techniques.
 
 
 ## Table of Contents 
@@ -30,31 +30,34 @@
 
 ## Installation
 
-To install necessary dependencies, run the following command:
+## Instructions to play
 
-```
-npm install
-```
+* Go to this site: https://nawright16.github.io/guess-the-word/
+* You can use the keyboard to guess words. You can also click on the letters of the digital keyboard in the game.
+* If you guess the correct word, you'll receive a 'Great Job!' notification.
+* If you don't you'll get an alert with the correct word and an 'Game Over' message.
+*If you want to play again, simply click the replay button at the bottom of the screen
 
-## Usage
-
-
-
-
-  
 ## Contributing
+ See questions below
 
 ## Credits
+* https://stackoverflow.com/questions/4550505/getting-a-random-value-from-a-javascript-array
+https://developer.mozilla.org/en-US/docs/Web/API/KeyboardLayoutMap/forEach
+* https://www.youtube.com/watch?v=mpby4HiElek&list=PL7VGP-8h8i1NrD4pgT9XfAk-UiH-yHvP3&index=7&t=177s&ab_channel=CodewithAniaKub%C3%B3w
+* https://developer.mozilla.org/en-US/docs/Web/API/KeyboardLayoutMap/forEach
+* https://www.section.io/engineering-education/keyboard-events-in-javascript/
+* https://makeschool.org/mediabook/oa/tutorials/build-a-game-of-concentration-with-javascript/final-touch-ups/
+* http://www.jacobenfield.com/jakeWeb/JS_GAMES/lesson18/index.php
 
 
 ## Tests
 
-To run tests, run the following command:
-
-```
-npm test
-```
-
 ## Questions
 
 If you have any questions about the repo, open an issue or contact me directly at nawright16@gmail.com. You can find more of my work at [nawright16](https://github.com/nawright16/).
+
+## Bugs
+* Styling is not responsive. A larger screen is best to play this game
+* Currently, keyboard accepts input other than alphabet characters
+* Keyboard keys do not change color
