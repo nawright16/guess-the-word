@@ -16,13 +16,17 @@
 
 * [Installation](#installation)
 
-* [Usage](#usage)
+* [Instructions](#instructions)
 
 * [Contributing](#contributing)
+
+* [Credits](#credits)
 
 * [Tests](#tests)
 
 * [Questions](#questions)
+
+* [Bugs](#bugs)
 
 ## Screenshot
 
