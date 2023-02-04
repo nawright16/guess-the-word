@@ -4,7 +4,7 @@ body {
 }
 
 .container {
-    height: 95vh;
+    height: 73vh;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -20,13 +20,13 @@ body {
 
 .messages {
     width: 40vw;
-    height: 6vh;
+    height: 8vh;
     font-size: 1.25rem;
     display: flex;
     justify-content: center;
     color: #F1FAEE;
     margin: 2px;
-    padding-top: 22px;
+    padding-top: 2px;
 }
 
 .messages p {
@@ -40,14 +40,6 @@ body {
     margin: auto;
 }
 
-
-.guess-board {
-    height: 45vh;
-    width: 43vw;
-    display: flex;
-    justify-content: center;
-    flex-direction: row;
-}
 
 .tile-container div {
     display: flex;
@@ -68,8 +60,12 @@ body {
 }
 
 .keyboard {
-    width: 42rem;
-    margin-left: 1.5rem;
+    margin-top: 5em;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 25vw;
+    
 }
 
 .keyboard button {
@@ -92,9 +88,6 @@ body {
     background-color: #30B700 !important;
 }
 
-#X {
-    margin-left: 4rem;
-}
 
 .replay {
     display: flex;

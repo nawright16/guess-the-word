@@ -72,8 +72,6 @@ const tileRows = [
     ['', '', '', '', '']
 ]
 
-
-
 // This code is from https://developer.mozilla.org/en-US/docs/Web/API/KeyboardLayoutMap/forEach and https://www.youtube.com/watch?v=mpby4HiElek&list=PL7VGP-8h8i1NrD4pgT9XfAk-UiH-yHvP3&index=7&t=177s&ab_channel=CodewithAniaKub%C3%B3w
 // This code takes each array from tileRows above and assigns it a div, which is a cell for a letter in the game. The div is assigned the value of tile and given an ID of tileRow + the index value of the array.
 
@@ -112,6 +110,10 @@ const keyPress = document.addEventListener('keyup', (event) => {
         const name = event.key;
         const code = event.code;
         const capitalName = name.toUpperCase();
+    
+    // if (key != event.key) {
+    //     document.removeEventListener('keyup', keyPress)
+    // }    
 
         if (code === 'Enter') {
             checkRows()
@@ -185,6 +187,7 @@ const checkRows = () => {
             currentTile = 0
         } else if (currentRow >= 5) {
             showMessage('Game Over')
+            alert('Word is ' + wordle)
             gameOver = true
             return
 
@@ -218,6 +221,10 @@ const addColor = () => {
             }
         }, 300 * index)
     })
+}
+
+const keyColor = () => {
+
 }
 
 // From https://makeschool.org/mediabook/oa/tutorials/build-a-game-of-concentration-with-javascript/final-touch-ups/ and http://www.jacobenfield.com/jakeWeb/JS_GAMES/lesson18/index.php. This code assigns the replayButton variable to the replaybtn element in the HTML. Then calls the replay() function to reload the page.
