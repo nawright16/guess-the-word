@@ -26,7 +26,7 @@
 
 ## Screenshot
 
-![ScreenShot](https://github.com/nawright16/guess-the-word/blob/screenshot.png)
+![ScreenShot](https://github.com/nawright16/guess-the-word/blob/master/screenshot.PNG)
 
 ## Installation
 
