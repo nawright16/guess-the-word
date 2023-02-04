@@ -177,8 +177,7 @@ const checkRows = () => {
             currentRow++
             currentTile = 0
         } else if (currentRow >= 5) {
-            showMessage('Game Over')
-            alert('Word is ' + wordle)
+            showMessage('Game Over. Word is ' + wordle)
             gameOver = true
             return
 
