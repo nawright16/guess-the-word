@@ -25,7 +25,7 @@ body {
     display: flex;
     justify-content: center;
     color: #F1FAEE;
-    margin: 2px;
+    margin: 2em;
     padding-top: 2px;
 }
 
@@ -47,8 +47,8 @@ body {
 
 .tile-container .guess {
     display: flex;
-    width: 3vw;
-    height: 6vh;
+    width: 4.2em;
+    height: 4.75em;
     background-color: #457B9D;
     border: 2px solid #F1FAEE;
     color: #F1FAEE;
@@ -70,8 +70,8 @@ body {
 }
 
 .keyboard button {
-    width: 4rem;
-    height: 4rem;
+    width: 4.5em;
+    height: 4.5em;
     background-color: #A8DADC;
     border-radius: 5px;
 }
