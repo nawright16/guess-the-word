@@ -7,11 +7,12 @@ const wordBank = ['HAVEN', 'DRAIN', 'SINUS', 'PENNY', 'PASTE', 'BOUGH', 'FOLLY',
 // This code will return a random value from the worBank array listed above by choosing a random value in the range of 0 and the array length
 // add async function to get word from API
 
+// let wordle = await fetchWord()
 
 let wordle = wordBank[Math.floor(Math.random() * wordBank.length)]
 
-console.log(wordle)
 
+//console.log(wordle)
 
 // assign values for each major div
 
@@ -61,6 +62,7 @@ const keys = [
     'ENTER',
     '<<'
 ]
+
 // Creating my grid using an array of blank values.
 
 const tileRows = [
@@ -99,21 +101,14 @@ keys.forEach(key => {
     keyboard.append(button)
 })
 
-
-
-
 // This code is from here: https://www.section.io/engineering-education/keyboard-events-in-javascript/
-// I am adding the capability to use the keyboard to guess words rather than only be allowed to click. I used console.log to get the names and code of the events of a 'keyup', then define them as variables and pass them into my event listener. Then the code checks if enter or backspace is pressed on the keyboard
+// I am adding the capability to use the keyboard to guess words rather than only be allowed to click. I used console.log to get the names and code of the events of a 'keyup', then define them as variables and pass them into my event listener. Then the code checks if enter or backspace is pressed on the keyboard. Enter will run the checkRows function. Backspace will run the deleteLetter function.
 
 const keyPress = document.addEventListener('keyup', (event) => {
     if (!gameOver) {
         const name = event.key;
         const code = event.code;
         const capitalName = name.toUpperCase();
-    
-    // if (key != event.key) {
-    //     document.removeEventListener('keyup', keyPress)
-    // }    
 
         if (code === 'Enter') {
             checkRows()
@@ -126,7 +121,6 @@ const keyPress = document.addEventListener('keyup', (event) => {
         }
     }
 })
-
 
 // This function checks the enter and backspace keys. If backspace is clicked, the deleteLetter() function is called as a callback. If enter is clicked, checkRows() function is called as a callback. If neither is clicked, it enters the value of the key clicked. 
 
@@ -142,9 +136,6 @@ const click = (key) => {
             addLetter(key)
         }
     }
-
-
-
 }
 
 // This code adds a letter to the tiles by checking the index values. The function checks the square's row and tile numbers by it's ID assigned in tileRows.forEach above.
@@ -195,13 +186,13 @@ const checkRows = () => {
     }
 
 }
+
 // This function creates gameMessage as a p tag and puts it in the message display div. What message displays depends on the check rows function above
 
 const showMessage = (message) => {
     const gameMessage = document.createElement('p')
     gameMessage.textContent = message
     messageDisplay.append(gameMessage)
-
 }
 
 // From https://www.youtube.com/watch?v=mpby4HiElek&list=PL7VGP-8h8i1NrD4pgT9XfAk-UiH-yHvP3&index=7&ab_channel=CodewithAniaKub%C3%B3w
@@ -221,10 +212,6 @@ const addColor = () => {
             }
         }, 300 * index)
     })
-}
-
-const keyColor = () => {
-
 }
 
 // From https://makeschool.org/mediabook/oa/tutorials/build-a-game-of-concentration-with-javascript/final-touch-ups/ and http://www.jacobenfield.com/jakeWeb/JS_GAMES/lesson18/index.php. This code assigns the replayButton variable to the replaybtn element in the HTML. Then calls the replay() function to reload the page.
