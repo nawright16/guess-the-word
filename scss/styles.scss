@@ -1,0 +1,146 @@
+body {
+	background-color: #1D3557;
+	width: 100%;
+}
+.container {
+	height: 73vh;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.title {
+	text-align: center;
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	color: #457B9D;
+	border-bottom: solid 4px #FF6D6A;
+	width: 100vw;
+	font-size: .75rem;
+	text-align: center;
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	color: #457B9D;
+	border-bottom: solid 2px #FF6D6A;
+	width: 100vw;
+}
+.messages {
+	width: 40vw;
+	height: 8vh;
+	font-size: 1.25rem;
+	display: flex;
+	justify-content: center;
+	color: #F1FAEE;
+	margin: 2em;
+	padding-top: 2px;
+	width: 20rem;
+	height: 3rem;
+	font-size: 1.2rem;
+	display: flex;
+	justify-content: center;
+	color: #F1FAEE;
+	margin: 2px;
+	padding-top: 20px;
+	p {
+		background-color: #FF6D6A;
+		text-align: center;
+		font-weight: bold;
+		width: 10em;
+		height: 2.75em;
+		border-radius: 5px;
+		padding-top: 4px;
+		margin: auto;
+	}
+}
+.tile-container {
+	height: 3.5em;
+	padding-bottom: 10px;
+	div {
+		display: flex;
+		display: flex;
+	}
+	.guess {
+		display: flex;
+		width: 4.2em;
+		height: 4.75em;
+		background-color: #457B9D;
+		border: 2px solid #F1FAEE;
+		color: #F1FAEE;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		align-items: center;
+		margin: 2px;
+		display: flex;
+		width: 3vw;
+		height: 5vh;
+		background-color: #457B9D;
+		border: 2px solid #F1FAEE;
+		color: white;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		align-items: center;
+		margin: 2px;
+	}
+}
+.keyboard {
+	margin-top: 5em;
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	width: 25vw;
+	min-width: 25vw;
+	width: 30vw;
+	button {
+		width: 4.5em;
+		height: 4.5em;
+		background-color: #A8DADC;
+		border-radius: 5px;
+		width: 3vw;
+		height: 3vh;
+		background-color: #A8DADC;
+		border-radius: 5px;
+	}
+}
+.red-fillcolor {
+	background-color: #FF6D6A !important;
+}
+.yellow-fillcolor {
+	background-color: #b59f3a !important;
+}
+.green-fillcolor {
+	background-color: #30B700 !important;
+}
+.replay {
+	display: flex;
+	justify-content: center;
+}
+#replay-btn {
+	display: flex;
+	justify-content: center;
+	color: #F1FAEE;
+	font-weight: bold;
+	padding-top: .9em;
+	margin-top: 12em;
+	background-color: #FF6D6A;
+	width: 12em;
+	height: 3em;
+	border-radius: 5px;
+	border: none;
+}
+@media only screen and (max-width: 600px) {
+							body {
+        display: flex;
+							background-color: #1D3557;
+							justify-content: center;
+						}
+					}
+
+.guess-board {
+	height: 45vh;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+}
+#X {
+	margin-left: 37px;
+}
